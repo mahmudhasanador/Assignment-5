@@ -1,0 +1,36 @@
+.added-task-style {
+  background-color: #f4f7ff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #000;
+  border-radius: 6px;
+}
+<div class="task task1 bg-[#F4F7FF] p-8 rounded-lg">
+<div class="">
+  <button class="text-base px-4 py-2 bg-white rounded-lg mb-4">
+    ShopEase
+  </button>
+  <h2 class="text-2xl mb-4" id="task-title">Fix Mobile Button Issue</h2>
+  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+    Store the user's preference in localStorage, update CSS
+    variables dynamically, and apply a smooth transition effect.
+  </p>
+  <!-- <hr> -->
+  <!-- footer-div -->
+  <div class="mt-[30px] flex justify-between">
+    <!-- left-div -->
+    <div>
+      <h5 class="text-[14px]">Deadline</h5>
+      <h2 class="text-base text-[#000000] font-[500]">
+        21 March 2025
+      </h2>
+    </div>
+    <button
+      class="bg-[#3752FD] px-6 py-2 text-white text-base rounded-lg cursor-pointer"
+      id="complete-task-btn"
+    >
+      Completed
+    </button>
+  </div>
+</div>
+</div>
