@@ -2,11 +2,12 @@ const themeBtn = document.getElementById("theme-btn");
 
 //changeTheme function
 function changeTheme() {
-  const r = Math.floor(Math.random() * 256).toString(16);
-  const g = Math.floor(Math.random() * 256).toString(16);
-  const b = Math.floor(Math.random() * 256).toString(16);
-  return `#${r}${g}${b}`;
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r},${g},${b})`;
 }
+console.log(changeTheme());
 
 themeBtn.addEventListener("click", function () {
   const body = document.getElementById("body");
@@ -81,3 +82,38 @@ function completeTask() {
   }
   clearHistoryBtn.addEventListener("click", clearTaskHistory);
 }
+
+
+// Handle currentDate and dayName
+
+const dayName = document.getElementById("dayName");
+const currentDate = document.getElementById("currentDate");
+
+// getDayName function
+
+function getDayName() {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const today = new Date();
+    return days[today.getDay()];
+  }
+  
+dayName.innerText = `${getDayName()} ,`;  
+
+// getCurrentDate function
+
+function getCurrentDate() {
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: '2-digit' };
+    return today.toLocaleDateString('en-US', options).replace(',', ''); // Example: "March 02 2025"
+  }
+  
+  currentDate.innerText = getCurrentDate();
+
+
+//   redirect to the blog page
+
+const discoverSomethingNew = document.getElementById('discover-div');
+
+discoverSomethingNew.addEventListener("click",function(){
+    window.location.href = './blog.html';
+})

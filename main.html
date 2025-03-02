@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Task Board</title>
   </head>
   <body class="bg-[#F4F7FF]" id="body">
     <header>
       <nav
-        class="max-w-[1535px] m-auto bg-[#FFFFFF] mt-4 p-[24px] rounded-lg flex justify-between mb-5"
+        class="max-w-[1635px] m-auto bg-[#FFFFFF] mt-4 p-[24px] rounded-lg flex justify-between mb-5"
       >
         <div class="flex items-center gap-2">
           <img src="assets/logo.png" alt="" />
@@ -31,7 +31,7 @@
         </div>
       </nav>
     </header>
-    <section class="max-w-[1535px] rounded-2xl m-auto">
+    <section class="max-w-[1635px] rounded-2xl m-auto">
       <!-- container div -->
       <div class="flex gap-8">
         <!-- div-1 -->
@@ -55,6 +55,7 @@
             <!-- 2 -->
             <div
               class="bg-gradient-to-r from-[#3752FD] via-[#4A62FC] to-[#6A7EFA] py-8 px-10 rounded-xl flex items-center gap-9 col-span-2"
+              id="discover-div"
             >
               <!-- img-div -->
               <div>
@@ -74,8 +75,8 @@
               </div>
               <!-- total-task--div -->
               <div>
-                <h5 class="text-xl font-[400]">Task Assigned </h5>
-                <h1 class="font-bold text-3xl">05</h1>
+                <h5 class="text-xl font-[400] text-[22px]" id="dayName"></h5>
+                <h1 class="font-bold text-[24px]" id="currentDate"></h1>
               </div>
             </div>
           </div>
@@ -92,14 +93,18 @@
                   <h2 class="text-2xl mb-4" id="task-title">
                     Fix Mobile Button Issue
                   </h2>
-                  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+                  <p
+                    class="p-4 bg-white rounded-lg text-base text-[#000000] mb-4"
+                  >
                     Debug using Chrome DevTools, check for overlapping elements,
                     and ensure onClick works properly and ensure onClick works
                     properly
                   </p>
-                  <!-- <hr> -->
+                  <hr
+                    class="border-t-2 border-[#3752FD] border-dashed opacity-20"
+                  />
                   <!-- footer-div -->
-                  <div class="mt-[30px] flex justify-between">
+                  <div class="mt-[20px] flex justify-between">
                     <!-- left-div -->
                     <div>
                       <h5 class="text-[14px]">Deadline</h5>
@@ -122,13 +127,17 @@
                     CloudSync
                   </button>
                   <h2 class="text-2xl mb-4" id="task-title">Add Dark Mode</h2>
-                  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+                  <p
+                    class="p-4 bg-white rounded-lg text-base text-[#000000] mb-4"
+                  >
                     Store the user's preference in localStorage, update CSS
                     variables dynamically, and apply a smooth transition effect.
                   </p>
-                  <!-- <hr> -->
+                  <hr
+                    class="border-t-2 border-[#3752FD] border-dashed opacity-20"
+                  />
                   <!-- footer-div -->
-                  <div class="mt-[30px] flex justify-between">
+                  <div class="mt-[20px] flex justify-between">
                     <!-- left-div -->
                     <div>
                       <h5 class="text-[14px]">Deadline</h5>
@@ -153,14 +162,18 @@
                   <h2 class="text-2xl mb-4" id="task-title">
                     Optimize Home page 
                   </h2>
-                  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+                  <p
+                    class="p-4 bg-white rounded-lg text-base text-[#000000] mb-4"
+                  >
                     Debug using Chrome DevTools, check for overlapping elements,
                     and ensure onClick works properly and ensure onClick works
                     properly
                   </p>
-                  <!-- <hr> -->
+                  <hr
+                    class="border-t-2 border-[#3752FD] border-dashed opacity-20"
+                  />
                   <!-- footer-div -->
-                  <div class="mt-[30px] flex justify-between">
+                  <div class="mt-[20px] flex justify-between">
                     <!-- left-div -->
                     <div>
                       <h5 class="text-[14px]">Deadline</h5>
@@ -185,14 +198,19 @@
                   <h2 class="text-2xl mb-4" id="task-title">
                     Add new emoji 🤲
                   </h2>
-                  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+                  <p
+                    class="p-4 bg-white rounded-lg text-base text-[#000000] mb-4"
+                  >
                     Debug using Chrome DevTools, check for overlapping elements,
                     and ensure onClick works properly and ensure onClick works
                     properly
                   </p>
-                  <!-- <hr> -->
+                  <hr
+                    class="border-t-2 border-[#3752FD] border-dashed opacity-20"
+                  />
+
                   <!-- footer-div -->
-                  <div class="mt-[30px] flex justify-between">
+                  <div class="mt-[20px] flex justify-between">
                     <!-- left-div -->
                     <div>
                       <h5 class="text-[14px]">Deadline</h5>
@@ -215,16 +233,20 @@
                     Google LLC
                   </button>
                   <h2 class="text-2xl mb-4" id="task-title">
-                    Integrate OpenAI API 
+                    Integrate OpenAI API
                   </h2>
-                  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+                  <p
+                    class="p-4 bg-white rounded-lg text-base text-[#000000] mb-4"
+                  >
                     Debug using Chrome DevTools, check for overlapping elements,
                     and ensure onClick works properly and ensure onClick works
                     properly
                   </p>
-                  <!-- <hr> -->
+                  <hr
+                    class="border-t-2 border-[#3752FD] border-dashed opacity-20"
+                  />
                   <!-- footer-div -->
-                  <div class="mt-[30px] flex justify-between">
+                  <div class="mt-[20px] flex justify-between">
                     <!-- left-div -->
                     <div>
                       <h5 class="text-[14px]">Deadline</h5>
@@ -247,16 +269,20 @@
                     Glassdoar
                   </button>
                   <h2 class="text-2xl mb-4" id="task-title">
-                    Improve Job searching 
+                    Improve Job searching
                   </h2>
-                  <p class="p-4 bg-white rounded-lg text-base text-[#000000]">
+                  <p
+                    class="p-4 bg-white rounded-lg text-base text-[#000000] mb-4"
+                  >
                     Debug using Chrome DevTools, check for overlapping elements,
                     and ensure onClick works properly and ensure onClick works
                     properly
                   </p>
-                  <!-- <hr> -->
+                  <hr
+                    class="border-t-2 border-[#3752FD] border-dashed opacity-20"
+                  />
                   <!-- footer-div -->
-                  <div class="mt-[30px] flex justify-between">
+                  <div class="mt-[20px] flex justify-between">
                     <!-- left-div -->
                     <div>
                       <h5 class="text-[14px]">Deadline</h5>
@@ -277,11 +303,11 @@
           </div>
         </div>
         <!-- div-2 -->
-        <div class="bg-[#FFFFFF] p-6 rounded-lg w-7/12">
+        <div class="bg-[#FFFFFF] rounded-lg w-7/12">
           <!-- container-div -->
           <div>
             <!-- title-div -->
-            <div class="text-center">
+            <div class="text-center p-6">
               <div class="flex gap-4 items-center justify-center mb-4">
                 <img src="assets/activity.png" alt="" />
                 <h3 class="text-[20px] font-[600]">Activity Log</h3>
@@ -293,8 +319,11 @@
                 Clear History
               </button>
             </div>
-            <!-- <hr class="border-t-1 border-dashed"> -->
-            <div class="mt-4">
+            <hr
+              class="border-t-2 border-[#3752FD] border-dashed opacity-20 w-full"
+            />
+            <!-- Task history -->
+            <div class="mt-4 p-6">
               <div class="flex flex-col gap-y-5" id="task-history">
                 <!-- <p class="bg-[#F4F7FF] px-4 py-2 text-base text-black">
                         You have Complete The Task Add Dark Mode at 12:48:15 PM
